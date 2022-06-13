@@ -22,7 +22,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   keep-history: true
-  github_token: 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
+  github_token: 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
   app: myapp
   on:
     branch: main
