@@ -24,4 +24,5 @@ deploy:
   github_token: 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
   keep_history: true
   on:
-    branch: main
+     repo: Jowi20/jowi20.github.io   
+     branch: main
