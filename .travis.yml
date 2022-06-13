@@ -1,0 +1,28 @@
+language: python
+
+python:
+- '3.9'
+
+install:
+- pip install -r requirements.txt
+
+addons:
+  sonarcloud: true
+
+script:
+- sonar-scanner -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=jowi20
+  -Dsonar.login=$SONAR_TOKEN -X
+- pytest
+
+notifications:
+  slack: entornodeinte-7kl4185:0528pUpzaLJ5FdQCjZ76JkBP
+
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep-history: true
+  github_token: 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
+  app: myapp
+  on:
+    branch: main
