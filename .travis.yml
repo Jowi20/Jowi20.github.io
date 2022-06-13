@@ -21,8 +21,7 @@ notifications:
 deploy:
   provider: pages
   skip_cleanup: true
-  keep-history: true
-  github_token: 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
-  app: myapp
+  github_token: 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
+  keep_history: true
   on:
     branch: main
